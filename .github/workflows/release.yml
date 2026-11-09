@@ -1,12 +1,13 @@
 name: Release
 
-on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - lib/factory_bot/version.rb
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches: [main]
+#     paths:
+#       - lib/factory_bot/version.rb
+# 
 jobs:
   release:
     name: Release gem

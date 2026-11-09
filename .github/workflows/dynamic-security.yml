@@ -1,13 +1,14 @@
 name: update-security
 
-on:
-  push:
-    paths:
-      - SECURITY.md
-    branches:
-      - main
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     paths:
+#       - SECURITY.md
+#     branches:
+#       - main
+#   workflow_dispatch:
+# 
 jobs:
   update-security:
     permissions:

@@ -1,9 +1,10 @@
 name: Build
-on:
-  pull_request:
-  push:
-    branches: [ main ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   push:
+#     branches: [ main ]
+# 
 jobs:
   build:
     name: Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}

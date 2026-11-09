@@ -1,17 +1,18 @@
 name: Prepare release
 
-on:
-  workflow_dispatch:
-    inputs:
-      bump:
-        description: Version bump type
-        required: true
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       bump:
+#         description: Version bump type
+#         required: true
+#         type: choice
+#         options:
+#           - patch
+#           - minor
+#           - major
+# 
 jobs:
   prepare:
     name: Bump version and open release PR
